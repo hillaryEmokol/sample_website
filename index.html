@@ -67,6 +67,51 @@
     width: 100%;
     height: auto;
 }
+/*slider*/
+.slider-container {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .slider-container img {
+            width: 100%;
+            height: auto;
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        
+        /*welcome section*/
+        .welcome-section {
+            background-color: #f2f2f2;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .welcome-section h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .welcome-section p {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 40px;
+        }
+
+        .welcome-section button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
 
     </style>
 </head>
@@ -84,19 +129,31 @@
                 <li><a href="project.html">Team</a></li>
             </ul>
         </nav>
-
-        <main>
-            <div class="gallery">
-                <img src="assets/images/slider/slider5.jpeg" alt="Image 1">
-                <img src="assets/images/slider/slider2.jpeg" alt="Image 2">
-                <img src="assets/images/slider/slider3.jpeg" alt="Image 3">
-                <!-- Add more <img> elements for additional images -->
+        <section>
+            <div class="welcome-section">
+                <h1>Welcome to Our Blog</h1>
+                <p>The Blog is a summary of all our activities and implementation of the <b>Health-API and Mobile Application</b>.This is in fullfillment of the requirements of the completion of the final year project and the software Engineering course at Makerere University Kampala</p>
             </div>
+        </section>
+        <main>
+           
+            <section>
+                <h2>Data collection at Case Hospital</h2>
+                <div class="gallery">
+                    <img src="assets/images/slider/slider5.jpeg" alt="Image 1">
+                    <img src="assets/images/slider/slider2.jpeg" alt="Image 2">
+                    <img src="assets/images/slider/slider3.jpeg" alt="Image 3">
+                    <!-- Add more <img> elements for additional images -->
+                </div>
+            </section>
+
+           
         </main>
 
         <footer>
             &copy; 2023 Your Website. All rights reserved.
         </footer>
     </div>
+   
 </body>
 </html>

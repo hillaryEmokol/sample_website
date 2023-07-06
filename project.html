@@ -79,6 +79,46 @@
             margin: 0;
             font-style: italic;
         }
+        /*content card*/
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            width: 300px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .card a {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .card a:hover {
+            background-color: #555;
+        }
     </style>
 </head>
 <body>
@@ -98,21 +138,54 @@
 
         <main>
             <section>
-                <h2>Our Services</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt sem nec elit varius ullamcorper. Aliquam erat volutpat.</p>
-                <ul>
-                    <li>Service 1</li>
-                    <li>Service 2</li>
-                    <li>Service 3</li>
-                </ul>
+                <h2>Brief</h2>
+
+                <h3>The API</h3>
+                <p>The Health-Api and mobile application is a system built to leverage on patient data from various hospitals by linking various hospital databases and provide data through its APi. the API has an end-point that targets various receiver end-points from various hospital databases  </p>
+              
+                <h3>The Application</h3>
+                <p>The application consumes the services of the API to make available patient data on request from hospitals accross the country. it is sitted on a microservice architecure provides the data explorer, doctor smart, prescmod, medical reports and reminders module</p>
+                
             </section>
 
-            <section>
-                <h2>Service Details</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt sem nec elit varius ullamcorper. Aliquam erat volutpat.</p>
-                <p>Integer id quam nec eros hendrerit sagittis. Sed in bibendum enim, id condimentum velit. Fusce pharetra tincidunt purus, vitae placerat dui lacinia a. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-            </section>
-        </main>
+                    </main>
+
+                    <main>
+                        <section>
+                            <h2>System Features</h2>
+                            <div class="card-container">
+                                <div class="card">
+                                    <h3>Medical records</h3>
+                                    <p>This is the content of Card 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <a href="#">Read More</a>
+                                </div>
+                        
+                                <div class="card">
+                                    <h3>Reminders</h3>
+                                    <p>This is the content of Card 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <a href="#">Read More</a>
+                                </div>
+                        
+                                <div class="card">
+                                    <h3>Prescmod</h3>
+                                    <p>This is the content of Card 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <a href="#">Read More</a>
+                                </div>
+                                <div class="card">
+                                    <h3>Doctor Smart</h3>
+                                    <p>This is the content of Card 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <a href="#">Read More</a>
+                                </div>
+                                <div class="card">
+                                    <h3>Data Explorer</h3>
+                                    <p>This is the content of Card 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <a href="#">Read More</a>
+                                </div>
+                            </div>
+                        </section>
+                           
+                            
+                    </main>
 
         <footer>
             &copy; 2023 Your Website. All rights reserved.
