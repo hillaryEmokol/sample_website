@@ -101,6 +101,121 @@
             font-size: 18px;
             line-height: 1.5;
         }
+		body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 1200px; /* Adjust the maximum width as needed */
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px;
+        }
+
+        main {
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+        }
+		   .team-member {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .team-member h3 {
+            margin: 0;
+        }
+
+        .team-member p {
+            margin: 0;
+            font-style: italic;
+        }
+        /*content card*/
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            width: 300px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .card a {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .card a:hover {
+            background-color: #555;
+        }
     </style>
 </head>
 <body>
@@ -112,7 +227,7 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="About.html">About</a></li>
                 <li><a href="project.html">project</a></li>
                 <li><a href="Team.html">Team</a></li>
             </ul>
@@ -127,23 +242,30 @@
 						<h3>Joshua Gift Karamuzi</h3>
 						<p>API developer</p>
 						<p>Team Lead BSE23-9</p>
+						<a href="josh.html" class="button">contribution</a>
+						
 					</div>
 					<div class="team-member">
 						<img src="assets/images/barry.jpeg" alt="Team Member 2">
 						<h3>Hillary Emokol</h3>
 						<p>UI/UX</p>
 						<p>flutter</p>
-
+						<a href="hillary.html" class="button">contribution</a>
 					</div>
 					<div class="team-member">
 						<img src="assets/images/isaac.jpeg" alt="Team Member 3">
-						<h3>API Developer</h3>
-						<p></p>
+						<h3>Ngabirano Isaac</h3>
+						<p>API developer</p>
+						<p>Requirements</p>
+						<p>project Manager</p>
+						<a href="isaac.html" class="button">contribution</a>
 					</div>
 					<div class="team-member">
 						<img src="assets/images/noel.jpeg" alt="Team Member 3">
-						<h3>Flutter developer</h3>
+						<h3>Rutahigwa Emmanuel Noel</h3>
+						<p>Flutter Developer</p>
 						<p>Co-Lead BSE23-9</p>
+                        <a href="noel.html" class="button">contribution</a>
 					</div>
 				</div>
 			</section>
